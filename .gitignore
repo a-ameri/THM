@@ -1,0 +1,12 @@
+#ignore these files
+/less/
+/metadata/
+/scss/
+/sprites/
+/svgs/
+/webfonts/
+/css/*
+/js/
+#do not ignore
+!/css/manual-bootstrap.css
+!/css/ltd*
