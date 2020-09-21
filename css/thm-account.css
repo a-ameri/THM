@@ -14,11 +14,11 @@ div .badge{
 div[class~="col-md-6"]{
 	height: 100% !important;
 }
-.ltd-disabled-button {
+.thm-disabled-button {
     pointer-events: none;
     opacity: 0.4;
 }
-.ltd-tree-view{	
+.thm-tree-view{	
 
 	/*background-color: white;*/
 
@@ -34,7 +34,7 @@ div[class~="col-md-6"]{
 
 }
 
-.ltd-tree-view div{	
+.thm-tree-view div{	
 
 	background-color: white;
 
@@ -52,7 +52,7 @@ div[class~="col-md-6"]{
 
 }
 
-.ltd-tree-view ul{
+.thm-tree-view ul{
 
 	list-style-type: none;
 
@@ -66,13 +66,7 @@ div[class~="col-md-6"]{
 
 }
 
-.account-name::before{
-
-	content: "-"
-
-}
-
-.ltd-tree-view img{
+.thm-tree-view img{
 
 	height: 20px;
 
@@ -106,7 +100,7 @@ div[class~="col-md-6"]{
 
 }
 
-.ltd-tabs{
+.thm-tabs{
 
 	position: fixed;
 
@@ -116,7 +110,7 @@ div[class~="col-md-6"]{
 
 }
 
-.ltd-iframe{
+.thm-iframe{
 
 	position: absolute;
 
@@ -132,7 +126,7 @@ div[class~="col-md-6"]{
 
 }
 
-#ltd-tree-view .list-group-item.active{
+#thm-tree-view .list-group-item.active{
 
 	background-color: #97c0b6;
 
@@ -140,7 +134,7 @@ div[class~="col-md-6"]{
 
 }
 
-#ltd-content{
+#thm-content{
 
 	position: fixed;
 
@@ -152,7 +146,7 @@ div[class~="col-md-6"]{
 
 }
 
-#ltd-account-content{
+#thm-account-content{
 
 	position: fixed;
 
@@ -164,7 +158,7 @@ div[class~="col-md-6"]{
 
 }
 
-#ltd-main-action{
+#thm-main-action{
 
 	position: fixed;
 
@@ -172,7 +166,7 @@ div[class~="col-md-6"]{
 
 }
 
-#ltd-main-action div{
+#thm-main-action div{
 
 	height: 85%;
 

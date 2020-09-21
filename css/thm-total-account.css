@@ -103,7 +103,7 @@ div .badge{
 	overflow-x: hidden;
 }
 
-#ltd-action{
+#thm-action{
 
 	margin: 5px 0;
 
@@ -111,7 +111,7 @@ div .badge{
 
 }
 
-#ltd-action div{
+#thm-action div{
 
 	height: inherit;
 
@@ -131,7 +131,7 @@ div .badge{
 	position: fixed;
 	margin-top: 37px;
 }
-#ltd-precode{
+#thm-precode{
 	margin-bottom: 0.25%;
 }
 #assign-col-1{

@@ -10,13 +10,13 @@
 
 <link rel="stylesheet" href="css/all.css">
 
-<link rel="stylesheet" href="css/ltd-main.css">
+<link rel="stylesheet" href="css/thm-main.css">
 
-<link rel="stylesheet" href="css/ltd-color-font.css">
+<link rel="stylesheet" href="css/thm-color-font.css">
 
 <link rel="stylesheet" href="css/manual-bootstrap.css">
 
-<link rel="stylesheet" href="css/ltd-font.css">
+<link rel="stylesheet" href="css/thm-font.css">
 
 <script src="js/jquery.min.js"></script>
 
@@ -24,13 +24,13 @@
 
 <script src="js/popper.min.js"></script>
 
-<title>نرم افزار جامع حسابداری لاتیدان</title>
+<title>سامانه جامع خدمات فناوری اطلاعات</title>
 
 </head>
 
 
 
-<body class="ltd-bg text-right" dir="rtl">
+<body class="thm-bg text-right" dir="rtl">
 
 	<div class="container-fluid">
 
@@ -38,17 +38,17 @@
 
 			<!--begin sidebar-->
 
-			<div id="ltd-sidebar" class="col-sm-2  ltd-sidebar ltd-bg2">
+		<div id="thm-sidebar" class="col-sm-2 thm-dubai-light thm-sidebar thm-bg2">
 
-				<div class="w-100 d-flex justify-content-center">
+			<div class="w-100 d-flex justify-content-center">
 
-					<div class="row-cols-1 w-100 ltd-dubai-medium ltd-color111">
+				<div class="row-cols-1 w-100 ">
 
 						<!--begin company name-->
 
-						<div class="w-100 badge ltd-bg5 mt-2 p-2">
+						<div class="w-100 badge thm-bg5 mt-2 p-2">
 
-							<span>شرکت پدید آوران امید پارس</span>
+							<span>اداره کل امور مالیاتی استان هرمزگان</span>
 
 						</div>
 
@@ -56,9 +56,9 @@
 
 						<!--begin recently-->
 
-						<div class="mt-3 ltd-font sidebar-obj" style="right: 10px">
+						<div class="mt-3 sidebar-obj" style="right: 10px">
 
-							<ul class="list-group ltd-0radius p-0">
+							<ul class="list-group thm-0radius p-0">
 
 								<li href="#" class="list-group-item list-group-item-action text-center">صفحات به تازگی بازدید شده</li>							  
 
@@ -70,193 +70,203 @@
 
 						<!--begin menu-->
 
-						<div id="ltd-menu" class=" mt-3 ltd-font sidebar-obj">
+					<div id="thm-menu" class=" mt-3 sidebar-obj">
 
-							 <ul class="list-group ltd-0radius p-0">
+						<ul class="list-group thm-0radius p-0">
 
-							  <li data-toggle="collapse" data-target="#ul2-1" href="#" 
+							<li data-toggle="collapse" data-target="#ul2-1" href="#" class="list-group-item list-group-item-action text-center ">
 
-									class="list-group-item list-group-item-action text-center ">
+								<span>همه صفحات</span>
 
-								  	<span>همه صفحات</span>
+							</li>
 
-							 </li>
+							<ul id="ul2-1" class="list-group thm-0radius p-0 collapse">
 
-							  <ul id="ul2-1" class="list-group ltd-0radius p-0 collapse">
+								<li href="#" data-toggle="collapse" data-target="#ul3-1" class="list-group-item list-group-item-action">
 
-								  <li href="#" class="list-group-item list-group-item-action">
+									<span class="fas fa-exchange fa-size">&nbsp;&nbsp;</span><span>درخواست خدمت</span>
 
-									  <span>
+								</li>
 
-										  <img src="images/Menu/omoomi.png" alt="pic">عمومی
+								<ul id="ul3-1" class="list-group thm-0radius p-0 collapse">
 
-									  </span>
+									<li href="#" class="list-group-item list-group-item-action">
 
-								  </li>
+									  <span class="fas fa-cart-plus fa-size">&nbsp;&nbsp;</span><span>درخواست تجهیزات</span>
 
-								  <li data-toggle="collapse" data-target="#ul2-2" href="#" class="list-group-item list-group-item-action">
+									</li>
+									<li href="#" class="list-group-item list-group-item-action">
 
-									  <span>
+									  <span class="fas fa-wrench fa-size">&nbsp;&nbsp;</span><span>تعمیر تجهیزات</span>
 
-										  <img src="images/Menu/mali.png" alt="pic">مالی
+									</li>
+									<li href="#" class="list-group-item list-group-item-action">
 
-									  </span>
+										<span class="fab fa-usb fa-size">&nbsp;&nbsp;</span><span>خدمات نرم افزار و شبکه</span>
 
-								  </li>
+									</li>
 
-								  <ul id="ul2-2" class="list-group ltd-0radius p-0 collapse">
+							  	</ul>
+
+								<li data-toggle="collapse" data-target="#ul3-2" href="#" class="list-group-item list-group-item-action">
+
+									<span class="fas fa-users fa-size">&nbsp;&nbsp;</span><span>کاربران</span>
+
+								</li>
+
+								<ul id="ul3-2" class="list-group thm-0radius p-0 collapse">
 
 									  <li href="#" class="list-group-item list-group-item-action">
 
-										  <span><img src="images/Menu/other.png" alt="pic">دارایی
-
-										  </span>
+										<span class="fas fa-user-plus fa-size">&nbsp;&nbsp;</span><span>تعریف کاربر</span>
 
 									  </li>
+									  <li href="#" class="list-group-item list-group-item-action">
 
-									  <li data-toggle="collapse" data-target="#ul3-2" href="#" class="list-group-item list-group-item-action">		<span>
+										<span class="fas fa-building fa-size">&nbsp;&nbsp;</span><span>تعریف اداره</span>
 
-										  <img src="images/Menu/daftarkol.png" alt="pic">دفتر کل
+									</li>
+									<li href="#" class="list-group-item list-group-item-action">
 
-										  </span>
+										<span class="fas fa-university fa-size">&nbsp;&nbsp;</span><span>تعریف حوزه</span>
 
+									</li>
+									<li href="#" class="list-group-item list-group-item-action">
+
+										<span class="fab fa-connectdevelop fa-size">&nbsp;&nbsp;</span><span>انتساب کاربران به حوزه</span>
+
+									</li>
+									
+									<li href="#" class="list-group-item list-group-item-action">
+
+										<span class="fas fa-id-card fa-size">&nbsp;&nbsp;</span><span>انتساب وظایف</span>
+
+									</li>
+
+								</ul>
+								  
+								<li data-toggle="collapse" data-target="#ul3-3" href="#" class="list-group-item list-group-item-action">
+
+									<span class="fas fa-keyboard fa-size">&nbsp;&nbsp;</span><span>کالا</span>
+
+								</li>
+								<li data-toggle="collapse" data-target="#ul3-4" href="#" class="list-group-item list-group-item-action">
+
+									<span class="fas fa-tasks-alt fa-size">&nbsp;&nbsp;</span><span>انبار</span>
+
+								</li>
+								<ul id="ul3-4" class="list-group thm-0radius p-0 collapse">
+
+									<li href="#" class="list-group-item list-group-item-action">
+
+										<span class="fas fa-plus-square fa-size">&nbsp;&nbsp;</span><span>تعریف انبار</span>
+
+									</li>
+									<li href="#" class="list-group-item list-group-item-action">
+
+										<span class="fas fa-user-circle fa-size">&nbsp;&nbsp;</span><span>تعریف انباردار</span>
+
+								  	</li>
+									<li href="#" class="list-group-item list-group-item-action">
+
+										<span class="fas fa-cart-plus fa-size">&nbsp;&nbsp;</span><span>ثبت کالا</span>
+
+									</li>
+									<li href="#" class="list-group-item list-group-item-action">
+
+										<span class="fas fa-universal-access fa-size">&nbsp;&nbsp;</span><span>ثبت جانشین</span>
+  
 									  </li>
 
-									  <ul id="ul3-2" class="list-group ltd-0radius p-0 collapse">
-
-										  <li href="#" class="list-group-item list-group-item-action">
-
-											  <span>
-
-												  <img src="images/Menu/other.png" alt="pic">فهرست
-
-											  </span>
-
-										  </li>
-
-										  <li href="#" class="list-group-item list-group-item-action">
-
-											  <span>
-
-												  <img src="images/Menu/paye.png" alt="pic">اطلاعات پایه
-
-											  </span>
-
-										  </li>
-
-										  <li href="#" class="list-group-item list-group-item-action">
-
-											  <span>
-
-												  <img src="images/Menu/hesab.png" alt="pic">حساب ها
-
-											  </span>
-
-										  </li>
-
-									  </ul>
-
-								  </ul>								   
-
-							  </ul> 
+							  	</ul>
 
 							</ul> 
 
-						</div>
+						</ul> 
 
-						<!--end menu-->
+					</div>
 
-					</div>					
+					<!--end menu-->
 
-				</div>
+				</div>					
 
 			</div>
 
-			<!-- end sidebar-->
+		</div>
 
-			<!--begin main-->
+		<!-- end sidebar-->
 
-			<div id="ltd-main" class="col-sm-10 ltd-mian ltd-bg3 px-0 ">
+		<!--begin main-->
 
-				<!--begin flip-->
+		<div id="thm-main" class="col-sm-10 thm-mian thm-bg3 px-0 ">
 
-				<div>					
+			<!--begin flip-->
 
-					<i id="flip" class="fa fa-angle-right fa-2x pt-2 mt-5 ltd-bg2 position-fixed text-white" ></i>
+			<div>					
+
+				<i id="flip" class="fa fa-angle-right fa-2x pt-2 mt-5 thm-bg2 position-fixed text-white"></i>
+
+			</div>
+
+			<!--end flip-->
+
+			<!--begin header-->
+
+			<div class="row mr-0 mt-2 thm-color1" >
+
+				<div class="col-sm-4 d-flex justify-content-start thm-dubai-medium">
+
+					<div class="mr-0">
+
+						<span id="preferences" class="fa fa-ellipsis-v fa-2x thm-icon"></span>
+
+					</div>
+
+					<div class="badge thm-bg5 p-2 mr-2 thm-header-badge">
+
+						<span>1399/10/17</span>
+
+					</div>
 
 				</div>
 
-				<!--end flip-->
+				<div class="col-sm-4 thm-dubai-light" >
 
-				<!--begin header-->
+					<div class="input-group">
 
-				<div class="row mr-0 mt-2 ltd-color1" >
+						<div class="input-group-prepend">
 
-					<div class="col-sm-4 d-flex justify-content-start ltd-dubai-medium">
-
-						<div class="mr-0">
-
-							<span id="preferences" class="fa fa-ellipsis-v fa-2x ltd-icon"></span>
+							<span id="srchic" class="input-group-text fa fa-search thm-bg5 border-0"></span>
 
 						</div>
 
-						<div class="badge ltd-bg5 p-2 mr-2 ltd-header-badge">
-
-							<span>1399/10/17</span>
-
-						</div>
-
-						<div class="badge ltd-bg5 p-2 mr-2 ltd-header-badge">
-
-							<span>دفتر کل : دفتر اصلی</span>
-
-						</div>
-
-						<div class="badge ltd-bg5 p-2 mr-2 ltd-header-badge">
-
-							<span>دوره مالی : 99</span>
-
-						</div>
+						<input id="srchbx" type="text" class="border-0 thm-bg5 w-75">
 
 					</div>
 
-					<div class="col-sm-4 ltd-dubai-light" >
+				</div>
 
-						<div class="input-group">
-
-							<div class="input-group-prepend">
-
-								<span id="srchic" class="input-group-text fa fa-search ltd-bg5 border-0"></span>
-
-							</div>
-
-							<input id="srchbx" type="text" class="border-0 ltd-bg5 w-75">
-
-						</div>
-
-					</div>
-
-					<div class="col-sm-4 d-flex justify-content-end ltd-dubai-medium" >
+					<div class="col-sm-4 d-flex justify-content-end thm-dubai-medium" >
 
 						<div>
 
-							<span class="far fa-question-circle fa-2x ml-2 ltd-icon" aria-hidden="true"></span>
+							<span class="far fa-question-circle fa-2x ml-2 thm-icon" aria-hidden="true"></span>
 
 						</div>
 
 						<div>
 
-							<span class="far fa-cog fa-2x ml-2 ltd-icon" aria-hidden="true"></span>
+							<span class="far fa-cog fa-2x ml-2 thm-icon" aria-hidden="true"></span>
 
 						</div>
 
 						<div>
 
-							<span class="far fa-bell fa-2x ml-2 ltd-icon" aria-hidden="true"></span>
+							<span class="far fa-bell fa-2x ml-2 thm-icon" aria-hidden="true"></span>
 
 						</div>
 						
-						<div id="avatar-badge" class="ltd-avt badge ltd-bg5 p-2  ltd-header-badge">
+						<div id="avatar-badge" class="thm-avt badge thm-bg5 p-2  thm-header-badge">
 
 							<span>عادل عامری</span>
 
@@ -264,9 +274,9 @@
 						
 					</div>	
 						
-					<div id="avatar" class="ltd-avt p-0 m-0 position-fixed">
+					<div id="avatar" class="thm-avt p-0 m-0 position-fixed">
 
-						<img src="images/avatar.png" class="rounded-circle ltd-bg5 pt-0 mt-0" alt="Cinque Terre" style="width: 50px; height: 50px">
+						<img src="images/avatar.png" class="rounded-circle thm-bg5 pt-0 mt-0" alt="Cinque Terre" style="width: 50px; height: 50px">
 
 					</div>
 					
@@ -276,17 +286,17 @@
 
 				<!--begin content-->				
 
-				<div class="ltd-content ltd-color1">
+				<div class="thm-content thm-color1">
 
 					<!--begin tab title-->
 
-					<ul class="nav nav-tabs ltd-dubai-bold border-0" >
+					<ul class="nav nav-tabs thm-dubai-bold border-0" >
 
-						<li class="nav-item ltd-bg-tab" dir="ltr">
+						<li class="nav-item thm-bg-tab" dir="ltr">
 
 							<a data-toggle="tab" href="#home" class="nav-link active">
 
-								<span class="fa fa-times ltd-close-tab"></span>&nbsp;&nbsp;اطلاعات پایه 
+								<span class="fa fa-times thm-close-tab"></span>&nbsp;&nbsp;اطلاعات پایه 
 
 								<img src="images/Menu/paye.png" alt="pic" style="height: 25px;">
 
@@ -294,11 +304,11 @@
 
 						  </li>
 
-						<li class="nav-item ltd-bg-tab" dir="ltr">
+						<li class="nav-item thm-bg-tab" dir="ltr">
 
 							<a data-toggle="tab" href="#menu1" class="nav-link">
 
-								<span class="fa fa-times ltd-close-tab">&nbsp;</span>&nbsp;&nbsp;منوی اول
+								<span class="fa fa-times thm-close-tab">&nbsp;</span>&nbsp;&nbsp;منوی اول
 
 								<img src="images/Menu/daftarkol.png" alt="pic" style="height: 25px;">
 
@@ -306,11 +316,11 @@
 
 						  </li>
 
-						<li class="nav-item ltd-bg-tab" dir="ltr">
+						<li class="nav-item thm-bg-tab" dir="ltr">
 
 							<a data-toggle="tab" href="#menu2" class="nav-link">
 
-								<span class="fa fa-times ltd-close-tab">&nbsp;</span>&nbsp;&nbsp;منوی دوم
+								<span class="fa fa-times thm-close-tab">&nbsp;</span>&nbsp;&nbsp;منوی دوم
 
 								<img src="images/Menu/omoomi.png" alt="pic" style="height: 25px;">
 
@@ -318,11 +328,11 @@
 
 						  </li>
 
-						<li class="nav-item ltd-bg-tab" dir="ltr">
+						<li class="nav-item thm-bg-tab" dir="ltr">
 
 							<a data-toggle="tab" href="#menu3" class="nav-link">
 
-								<span class="fa fa-times ltd-close-tab">&nbsp;</span>&nbsp;&nbsp;منوی سوم
+								<span class="fa fa-times thm-close-tab">&nbsp;</span>&nbsp;&nbsp;منوی سوم
 
 								<img src="images/Menu/other.png" alt="pic" style="height: 25px;">
 
@@ -342,13 +352,13 @@
 
 					<!--begin tab content-->
 
-					<div id="tab-content" class="ltd-tabs tab-content ltd-bg-tab ltd-dubai-regular">
+					<div id="tab-content" class="thm-tabs tab-content thm-bg-tab thm-dubai-regular">
 
 						<div id="home" class="tab-pane fade in active show">
 
 							
 
-						  <iframe src="accounts.html" title="accounts" class="ltd-iframe"></iframe>
+						  <iframe src="manage-hardware.html" title="accounts" class="thm-iframe"></iframe>
 
 						</div>
 
@@ -396,21 +406,21 @@
 
 		$("#flip").click(function(){
 
-			if(document.getElementById("ltd-sidebar").style.width == "0%")
+			if(document.getElementById("thm-sidebar").style.width == "0%")
 
 			{
 
-				document.getElementById("ltd-sidebar").style.width = "16.67%";
+				document.getElementById("thm-sidebar").style.width = "16.67%";
 
-				document.getElementById("ltd-main").style.marginRight = "16.67%";
+				document.getElementById("thm-main").style.marginRight = "16.67%";
 
 				document.getElementById("tab-content").style.width = "80%";	
 
-				$("#ltd-sidebar").addClass("col-sm-2");
+				$("#thm-sidebar").addClass("col-sm-2");
 
-				$("#ltd-main").removeClass("col-sm-12");
+				$("#thm-main").removeClass("col-sm-12");
 
-				$("#ltd-main").addClass("col-sm-10");
+				$("#thm-main").addClass("col-sm-10");
 
 				$("#flip").removeClass("fa-angle-left");
 
@@ -422,17 +432,17 @@
 
 			{
 
-				$("#ltd-sidebar").removeClass("col-sm-2");
+				$("#thm-sidebar").removeClass("col-sm-2");
 
-				document.getElementById("ltd-sidebar").style.width = "0%";
+				document.getElementById("thm-sidebar").style.width = "0%";
 
-				document.getElementById("ltd-main").style.marginRight = "0%";
+				document.getElementById("thm-main").style.marginRight = "0%";
 
 				document.getElementById("tab-content").style.width = "97%";	
 
-				$("#ltd-main").removeClass("col-sm-10");
+				$("#thm-main").removeClass("col-sm-10");
 
-				$("#ltd-main").addClass("col-sm-12");
+				$("#thm-main").addClass("col-sm-12");
 
 				$("#flip").removeClass("fa-angle-right");
 
@@ -444,15 +454,15 @@
 
 		$(document).ready(function(){
 
-			$(".sidebar-obj > ul > li").addClass("ltd-bg1");
+			$(".sidebar-obj > ul > li").addClass("thm-bg1");
 
-			$(".sidebar-obj > ul > li").addClass("ltd-color5");
+			$(".sidebar-obj > ul > li").addClass("thm-color5");
 
-			$(".sidebar-obj > ul > ul> li").addClass("ltd-bg5");
+			$(".sidebar-obj > ul > ul> li").addClass("thm-bg5");
 
-			$(".sidebar-obj > ul > ul> ul > li").addClass("ltd-bg6");
+			$(".sidebar-obj > ul > ul> ul > li").addClass("thm-bg6");
 
-			$(".sidebar-obj > ul > ul> ul > ul > li").addClass("ltd-bg3");
+			$(".sidebar-obj > ul > ul> ul > ul > li").addClass("thm-bg3");
 
 			$(".sidebar-obj > ul > ul").addClass("show");
 

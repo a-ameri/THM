@@ -1,0 +1,260 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<link rel="stylesheet" href="css/all.css">
+
+<link rel="stylesheet" href="css/thm-color-font.css">
+
+<link rel="stylesheet" href="css/thm-account.css">
+
+<link rel="stylesheet" href="css/manual-bootstrap.css">
+
+<link rel="stylesheet" href="css/thm-font.css">
+
+<script src="js/jquery.min.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/popper.min.js"></script>
+
+<title>Untitled Document</title>
+
+</head>
+
+
+
+<body dir="rtl" class="thm-bg-tab text-right">
+
+<div class="container-fluid thm-dubai-light">
+
+	<!--begin header-->
+
+	<div id="thm-main-action" class="row w-100 thm-bg7">
+
+		<div class="col-md-5 d-flex justify-content-start w-100 thm-dubai-medium">
+
+			<div id="thm-new-account" class="badge mt-1 pt-1">
+
+				<img src="images/Add Tree.png" alt="add tree" height="100%">
+
+				<span>حساب معین جدید</span>
+
+			</div>
+
+			<div class="badge mt-1 pt-1 mr-2">
+
+				<img src="images/Delete.png" alt="delete" height="100%">
+
+			</div>
+
+			<div class="badge mt-1 pt-1 mr-2">
+
+				<img src="images/refresh.png" alt="refresh" height="100%">
+
+			</div>
+
+			<div class="badge mt-1 pt-1 mr-2">
+
+				<img src="images/sort.png" alt="sort" height="100%">
+
+				<span>مرتب سازی</span>
+
+			</div>
+
+		</div>
+
+		<div class="col-md-6 d-flex justify-content-start">
+
+			<div class="input-group mt-1">
+
+				<div class="input-group-prepend">
+
+					<span id="srchic" class="input-group-text fa fa-search border-0 pt-1"></span>
+
+				</div>
+
+				<input id="srchbx" type="text" class="border-0 w-75">
+
+			</div>
+
+		</div>
+
+		<div class="col-md-1 d-flex justify-content-end">
+
+			<div class="badge mt-1 pt-1 mr-2">
+
+				<img src="images/help.png" alt="help" height="100%">
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<!--end header-->
+
+	<!--begin content-->
+
+	<div id="thm-content" class="row">
+
+		<!--begin tree view-->
+
+	  <div class="col-md-4 h-100">
+
+		  <div class="thm-tree-view thm-dubai-light thm-bg5">
+
+		  	<div>			
+
+				<ul id="thm-tree-view">
+					<li data-target="#all"><span>ساختار کالا</span></li>
+					<ul id="all" class="hardware">
+
+						<li  data-target="#g10"><span class="hardware-name">پرینتر</span></li>
+
+						<ul id="g10"  class="hardware-brand">
+
+							<li data-target="#t1001"><span class="hardware-name">HP</span></li>
+
+							<ul id="t1001"  class="hardware-type">
+
+								<li><span class="hardware-name">2035</span></li>
+
+							</ul>
+
+						</ul>
+
+						<li><span class="hardware-name">مانیتور</span></li>	
+
+						<li><span class="hardware-name">رم</span></li>
+
+						<li><span class="hardware-name">اسکنر</span></li>
+
+						<li><span class="hardware-name">کیس</span></li>
+
+					</ul>
+
+				</ul>	
+
+			</div>
+
+		  </div>
+
+		</div>
+
+		<!--end tree view-->
+
+		<!--begin account content-->
+
+		  <div class="col-md-8">
+
+			<div id="thm-account-content" class="thm-bg5 thm-dubai-light">
+
+				<iframe class="thm-iframe" src="hardware.html" title="total account"></iframe>
+
+			</div>
+
+		  </div>
+
+	  	<!--end account content-->
+
+	  <script>
+
+				$(document).ready(function(){
+
+					$(".thm-tree-view ul").addClass("list-group");
+
+					$("#thm-tree-view  ul").css("padding-right","25px");
+
+					$("#thm-tree-view ul").addClass("nested collapse");
+
+					$(".thm-tree-view li").addClass("list-group-item list-group-item-action");
+
+					$(".thm-tree-view li").css("border-style","none");
+					
+					$(".thm-tree-view li").css("padding-right","41px");
+
+					$("#thm-tree-view > li").attr("data-toggle","collapse");
+
+					$(".hardware > li").attr("data-toggle","collapse");
+
+					$(".hardware-brand > li").attr("data-toggle","collapse");
+
+					$(".hardware > li").prepend('<span class="fas fa-cart-plus fa-size">&nbsp;&nbsp;</span>');
+
+					$(".hardware-brand > li").prepend('<span class="fas fa-share-alt fa-size">&nbsp;&nbsp;</span>');
+
+					$(".hardware-type > li").prepend('<span class="fab fa-medium fa-size">&nbsp;&nbsp;</span>');
+					
+					var plus = '<span class="far fa-plus-circle ml-2"></span>';
+					
+					$("#thm-tree-view > li").prepend(plus);
+					
+					$(".hardware > ul").prev().prepend(plus);		
+					
+					$(".hardware-brand > ul").prev().prepend(plus);	
+					
+					$("#thm-tree-view > li").css("padding-right","");
+					
+					$(".hardware > ul").prev().css("padding-right","");		
+					
+					$(".hardware-brand > ul").prev().css("padding-right","");	
+					
+					$("#thm-tree-view li").click(function(){
+
+						$("#thm-tree-view li").removeClass("active");
+
+						$(this).addClass("active");
+
+					});
+					
+					function li_click(){
+						if($(this).children(".fa-plus-circle").length){
+							$(this).children(".fa-plus-circle").addClass("fa-minus-circle");
+							$(this).children(".fa-plus-circle").removeClass("fa-plus-circle");
+						}else{
+							$(this).children(".fa-minus-circle").addClass("fa-plus-circle");
+							$(this).children(".fa-minus-circle").removeClass("fa-minus-circle");
+						}						
+					}					
+					
+					$("#thm-tree-view li").click(li_click);
+					$("#thm-tree-view li").dblclick(li_click);
+
+					$("#thm-tree-view > li").click(function(){
+						$("#thm-new-account").removeClass("thm-disabled-button");
+						$("#thm-new-account > span").html("ثبت کالای جدید");
+					});
+					$("#thm-tree-view > ul > li ").click(function(){
+						$("#thm-new-account").removeClass("thm-disabled-button");
+						$("#thm-new-account > span").html("ثبت برند جدید");
+					});
+					$("#thm-tree-view > ul > ul > li").click(function(){
+						$("#thm-new-account").removeClass("thm-disabled-button");
+						$("#thm-new-account > span").html("ثبت مدل جدید");
+					});
+					$("#thm-tree-view ul > ul > ul > li").click(function(){
+						$("#thm-new-account").addClass("thm-disabled-button");
+					});
+				});
+
+		</script>
+
+	</div>
+
+	<!--end content-->
+
+
+
+	</div>
+
+</body>
+
+</html>
+

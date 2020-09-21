@@ -3,14 +3,14 @@
 /* CSS Document */
 
 /*begin master css*/
-.ltd-header-badge{
+.thm-header-badge{
 	height: 30px;
 }
-.ltd-header-badge:hover{
+.thm-header-badge:hover{
 	opacity: 80%;
 	cursor: pointer;
 }
-.ltd-sidebar{
+.thm-sidebar{
 
 	position: absolute;
 
@@ -24,7 +24,7 @@
 
 }
 
-.ltd-mian{
+.thm-mian{
 
 	position: fixed;
 
@@ -38,7 +38,7 @@
 
 
 
-.ltd-icon:hover{
+.thm-icon:hover{
 
 	cursor: pointer;
 
@@ -46,7 +46,7 @@
 
 }
 
-.ltd-tabs{
+.thm-tabs{
 
 	position: fixed;
 
@@ -56,7 +56,7 @@
 
 }
 
-.ltd-content{
+.thm-content{
 
 	margin-right: 25px;
 
@@ -64,19 +64,19 @@
 
 }
 
-.ltd-content ul{
+.thm-content ul{
 
 	padding-right: 0;
 	font-size: small;
 }
 
-.ltd-close-tab:hover{
+.thm-close-tab:hover{
 
 	color: red;
 
 }
 
-.ltd-iframe{
+.thm-iframe{
 
 	position: absolute;
 
@@ -103,19 +103,24 @@
 #avatar:hover{
 	cursor: pointer;
 }
-#ltd-sidebar{
+#thm-sidebar{
 
 	transition: 0.5S;
+	font-size: small;
 
 }
 
-#ltd-sidebar div{
+#thm-sidebar div{
 
 	transition: 0.3S;
 
 }
 
-#ltd-main{
+#thm-sidebar .badge{
+	font-size: small;
+}
+
+#thm-main{
 
 	transition: 0.5S;
 
@@ -165,13 +170,13 @@
 
 }
 
-#ltd-menu{
+#thm-menu{
 
 	right: 10px;
 
 }
 
-#ltd-menu img{
+#thm-menu img{
 
 	height: 15px; 
 
