@@ -27,20 +27,23 @@
 .thm-0radius{
 	border-radius: 0 !important;
 }
-.thm-dubai-regular{
+.thm-sans-regular{
 	font-family: IRANSans-regular;	
 }
-.thm-dubai-light{
+.thm-sans-light{
 	font-family: IRANSans-light;	
+}
+.thm-sans-ultralight{
+	font-family: IRANSans-ultralight;	
 }
 .thm-title-font{
 	font-family: IRANSans-bold;
 	color: #294f3a;
 }
-.thm-dubai-bold{
+.thm-sans-bold{
 	font-family: IRANSans-bold;
 }
-.thm-dubai-medium{
+.thm-sans-medium{
 	font-family: IRANSans-medium;	
 }
 .thm-color1{
