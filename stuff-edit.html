@@ -1,0 +1,197 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<link rel="stylesheet" href="css/all.css">
+
+<link rel="stylesheet" href="css/thm-color-font.css">
+
+<link rel="stylesheet" href="css/thm-fields.css">
+
+<link rel="stylesheet" href="css/thm-edit.css">
+
+<link rel="stylesheet" href="css/manual-bootstrap.css">
+
+<link rel="stylesheet" href="css/thm-font.css">
+
+<script src="js/jquery.min.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/popper.min.js"></script>
+
+<title>ثبت کالا</title>
+
+</head>
+
+
+
+<body dir="rtl" class="thm-bg-tab text-right">
+
+<div class="container-fluid thm-sans-light">
+
+	<!--begin header-->
+
+	<div id="thm-main-action" class="row w-100 thm-bg7">
+
+		<div class="col-12 d-flex justify-content-start w-100 thm-sans-medium">
+
+			<div class="badge save">
+
+				<img src="images/save.png" alt="save" height="100%">
+
+			</div>
+
+			<div class="badge  mr-2">
+
+				<img src="images/save add.png" alt="save add" height="100%">
+
+			</div>
+
+			<div class="badge  mr-2">
+
+				<img src="images/save close.png" alt="save close" height="100%">
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<!--end header-->
+
+	<!--begin content-->
+
+	<div id="thm-content" class="row">
+
+		<!--begin insert stuff-->
+
+	  <div class="col-md-12 h-100">
+
+		  <div class="thm-fields thm-sans-light thm-bg6">
+			
+			<div class="row">
+				<div class="col-md-3">
+					<label class="thm-title-font font-weight-bolder">کالا</label>
+					<select class="form-control font-weight-light thm-sans-regular">
+						<option><span>همه</span></option>
+						<option><span>کیس</span></option>
+						<option><span>مانیتور</span></option>
+						<option selected><span>پرینتر</span></option>
+					</select>
+				</div>
+				<div class="col-md-3">
+					<label class="thm-title-font font-weight-bolder">برند</label>
+					<select class="form-control font-weight-light thm-sans-regular">
+						<option><span>همه</span></option>
+						<option selected><span>HP</span></option>
+						<option><span>Canon</span></option>
+						<option><span>Brother</span></option>
+					</select>
+				</div>
+				<div class="col-md-3">
+					<label class="thm-title-font font-weight-bolder">مدل</label>
+					<select class="form-control font-weight-light thm-sans-regular">
+						<option><span>همه</span></option>
+						<option selected><span>2035</span></option>
+						<option><span>2014</span></option>
+						<option><span>M 402</span></option>
+					</select>
+				</div>
+				<div class="col-md-3">
+					<label class="thm-title-font font-weight-bolder">انبار</label>
+					<select class="form-control font-weight-light thm-sans-regular">
+						<option><span>همه</span></option>
+						<option selected><span>اداره کل</span></option>
+						<option><span>ارزش افزوده</span></option>
+						<option><span>داماهی</span></option>
+					</select>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<label class="thm-title-font font-weight-bolder">وضعیت سلامت</label>
+					<select class="form-control font-weight-light thm-sans-regular">
+						<option><span>همه</span></option>
+						<option><span>خوب</span></option>
+						<option selected><span>متوسط</span></option>
+						<option><span>ضعیف</span></option>
+						<option><span>خراب</span></option>
+						<option><span>در دست تعمیر</span></option>
+						<option><span>نامشخص</span></option>
+					</select>
+				</div>
+				<div class="col-md-3">
+					<label class="thm-title-font font-weight-bolder">موجود در انبار</label>
+					<select class="form-control font-weight-light thm-sans-regular">
+						<option><span>همه</span></option>
+						<option><span>بله</span></option>
+						<option selected><span>خیر</span></option>
+					</select>
+				</div>
+				<div class="col-md-3">
+					<label class="thm-title-font font-weight-bolder">تاریخ ورود</label>
+					<input class="form-control font-weight-light thm-sans-regular" value="1399/01/05">
+				</div>
+				<div class="col-md-3">
+					<label class="thm-title-font font-weight-bolder">تاریخ اسقاط</label>
+					<input class="form-control font-weight-light thm-sans-regular" value="-">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<label class="thm-title-font font-weight-bolder">شماره سریال</label>
+					<input class="form-control font-weight-light thm-sans-regular" value="366">
+				</div>
+				<div class="col-md-3">
+					<label class="thm-title-font font-weight-bolder">شماره اموال</label>
+					<input class="form-control font-weight-light thm-sans-regular" value="1025">
+				</div>
+				<div class="col-md-3">
+					<label class="thm-title-font font-weight-bolder">کاربر</label>
+					<input class="form-control font-weight-light thm-sans-regular" value="عادل عامری">
+				</div>
+				<div class="col-md-3">
+					<button class="btn btn-info">مشاهده جزئیات</button>
+				</div>
+			</div>
+				<div class="row">
+					<div class="col-md-12">
+						<label class="thm-title-font font-weight-bolder">توضیحات</label>
+						<textarea rows="10" class="thm-0radius form-control font-weight-light thm-sans-regular" ></textarea>
+					</div>
+				</div>
+				
+
+		  </div>
+
+		</div>
+
+		<!--end insert stuff-->
+
+	  <script>
+
+				$(document).ready(function(){
+
+				});
+
+		</script>
+
+	</div>
+
+	<!--end content-->
+
+
+
+	</div>
+
+</body>
+
+</html>
+
