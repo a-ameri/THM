@@ -14,6 +14,8 @@
 
 <link rel="stylesheet" href="css/thm-fields.css">
 
+<link rel="stylesheet" href="css/thm-list.css">
+
 <link rel="stylesheet" href="css/manual-bootstrap.css">
 
 <link rel="stylesheet" href="css/thm-font.css">
@@ -34,48 +36,42 @@
 
 <div class="container-fluid thm-sans-light">
 
-	<!--begin header-->
-
-	<div id="thm-main-action" class="row w-100 thm-bg7">
-
-		<div class="col-12 d-flex justify-content-start w-100 thm-sans-medium">
-
-			<div class="badge save">
-
-				<img src="images/save.png" alt="save" height="100%">
-
-			</div>
-
-			<div class="badge  mr-2">
-
-				<img src="images/save add.png" alt="save add" height="100%">
-
-			</div>
-
-			<div class="badge  mr-2">
-
-				<img src="images/save close.png" alt="save close" height="100%">
-
-			</div>
-
-		</div>
-
-	</div>
-
-	<!--end header-->
-
 	<!--begin content-->
 
 	<div id="thm-content" class="row">
 
 		<!--begin insert request softwate-->		
 	  	<div class="col-md-12 h-100">
-		 	<div class="thm-fields thm-sans-light thm-bg6">
+		 	 <div class="thm-fields thm-sans-light thm-bg6">
 				<div class="row">
-					<label class="thm-title-font font-weight-bolder">شرح درخواست</label>
-					<textarea rows="10" class="thm-0radius form-control font-weight-light thm-sans-regular" ></textarea>
+					<label class="thm-title-font font-weight-bolder" style="width: auto; margin-right: 20px;">درخواست شماره : 9600264</label>
 				</div>
 				<div class="row">
+					<div class="col-md-4">
+						<label class="thm-title-font font-weight-bolder">تاریخ ارسال درخواست</label>
+						<input type="text" class="form-control font-weight-light thm-sans-regular" value="1399/04/15">
+					</div>
+					<div class="col-md-4">
+						<label class="thm-title-font font-weight-bolder">تاریخ آخرین فعالیت</label>
+						<input type="text" class="form-control font-weight-light thm-sans-regular" value="1399/04/22">
+					</div>
+					<div class="col-md-4">
+						<label class="thm-title-font font-weight-bolder">وضعیت درخواست</label>
+						<select class="form-control font-weight-light thm-sans-regular">
+							<option><span>ارسال درخواست</span></option>
+							<option><span>دریافت درخواست</span></option>
+							<option><span>رد درخواست</span></option>
+							<option selected><span>در حال انجام</span></option>
+							<option><span>انجام شده</span></option>
+							<option><span>نا مشخص</span></option>
+						</select>
+					</div>
+					<div class="col-md-12">
+					<label class="thm-title-font font-weight-bolder" style="width: 10%;">متن</label>
+					<input type="text" class="thm-0radius form-control font-weight-light thm-sans-regular" style="width: 85%;">
+					</div>
+				</div>
+				<div class="row">					
 					<div class="col-md-12">
 						<button class="btn btn-info ml-1 btn-sm" >فایل</button>
 						<div class="progress thm-bg5">
@@ -88,6 +84,7 @@
 						<thead>
 							<tr>
 								<th>کاربر</th>
+								<th>تاریخ</th>
 								<th>متن</th>
 								<th>عملیات</th>
 							</tr>
@@ -95,26 +92,31 @@
 						<tbody>
 							<tr class="data">
 								<td>عادل عامری</td>
+								<td>1399/04/15</td>
 								<td>این یک متن تستی است.</td>
 								<td>
-									<button class="btn btn-info btn-sm">فایل</button>
+									<button class="btn btn-info btn-sm">دریافت فایل</button>
 									<button class="btn btn-warning btn-sm">ویرایش</button>
 									<button class="btn btn-danger btn-sm">حذف</button>
+									<button class="btn btn-dark btn-sm">مشاهده جزئیات</button>
 								</td>
 							</tr>
 							<tr class="data">
 								<td>رامین الماسی</td>
+								<td>1399/04/22</td>
 								<td>این یک متن تستی است و در پاسخ متن فوق است.</td>
 								<td>
-									<button class="btn btn-info btn-sm">فایل</button>
+									<button class="btn btn-info btn-sm">دریافت فایل</button>
 									<button class="btn btn-warning btn-sm">ویرایش</button>
 									<button class="btn btn-danger btn-sm">حذف</button>
+									<button class="btn btn-dark btn-sm">مشاهده جزئیات</button>
 								</td>
 							</tr>
 						</tbody>
 					</table>
 				</div>
-			</div>
+		  	</div>
+
 		</div>
 
 		<!--end insert strequest softwate-->
@@ -130,7 +132,10 @@
 	</div>
 
 	<!--end content-->
-</div>
+
+
+
+	</div>
 
 </body>
 
