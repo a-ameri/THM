@@ -73,6 +73,7 @@
 .thm-close-tab:hover{
 
 	color: red;
+	cursor: pointer;
 
 }
 

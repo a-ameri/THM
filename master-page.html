@@ -90,27 +90,27 @@
 
 								<ul id="ul3-1" class="list-group thm-0radius p-0 collapse">
 
-									<li href="request-stuff.html" class="list-group-item list-group-item-action">
+									<li id="request-stuff" href="request-stuff.html" class="list-group-item list-group-item-action">
 
 									  <span class="fas fa-cart-plus fa-size">&nbsp;&nbsp;</span><span>درخواست تجهیزات</span>
 
 									</li>
-									<li href="request-repair.html" class="list-group-item list-group-item-action">
+									<li id="request-repair" href="request-repair.html" class="list-group-item list-group-item-action">
 
 									  <span class="fas fa-wrench fa-size">&nbsp;&nbsp;</span><span>تعمیر تجهیزات</span>
 
 									</li>
-									<li href="request-software.html" class="list-group-item list-group-item-action">
+									<li id="request-software" href="request-software.html" class="list-group-item list-group-item-action">
 
 										<span class="fab fa-usb fa-size">&nbsp;&nbsp;</span><span>خدمات نرم افزار و شبکه</span>
 
 									</li>
-									<li href="request-list" class="list-group-item list-group-item-action">
+									<li id="request-list" href="request-list.html" class="list-group-item list-group-item-action">
 
 										<span class="fas fa-list fa-size">&nbsp;&nbsp;</span><span>لیست درخواست ها</span>
 
 									</li>
-									<li href="task-list" class="list-group-item list-group-item-action">
+									<li id="task-list" href="task-list.html" class="list-group-item list-group-item-action">
 
 										<span class="fas fa-list-alt fa-size">&nbsp;&nbsp;</span><span>کارتابل</span>
 
@@ -310,7 +310,11 @@
 
 							<a data-toggle="tab" href="#home" class="nav-link active">
 
-								<span class="fas fa-plus-square fa-size">&nbsp;&nbsp;</span><span>تعریف انبار</span>
+								<span class="fas fa-plus-square fa-size">
+								&nbsp;&nbsp;</span>
+								<span>تعریف انبار</span>
+								&nbsp;&nbsp;
+								<span class="fa fa-times thm-close-tab"></span>
 
 							</a>
 
@@ -420,6 +424,33 @@
 
 			$(".sidebar-obj > ul > ul> ul > ul > li > span").css("padding-right","20px");
 
+		});
+
+		$(document).ready(function(){
+			$("#thm-menu li").click(function(){
+				if($(this).attr("href") == "#")
+				return;
+				var hyper_ref = $(this).attr("href");
+				var id = $(this).attr("id");
+				var menu_title = '<li class="nav-item thm-bg-tab" dir="ltr"><a data-toggle="tab" href="#'+id+'" class="nav-link active">'+$(this).html()+'&nbsp;&nbsp;<span class="fa fa-times thm-close-tab"></span></a></li>';
+				var content = '<div id="'+id+'" class="tab-pane fade in active show"><iframe src="'+hyper_ref+'" title="accounts" class="thm-iframe"></iframe></div>';
+				$(".tab-pane").removeClass("active show");
+				$("#addtab").before(menu_title);
+				$("#tab-content").append(content);
+
+			});
+
+			$(document).on("click", "span.thm-close-tab" , function() {
+				$(this).parent().parent().remove();
+				var id = $(this).parent().attr('href');
+				$(id).remove();
+			});
+
+			$(document).on("click", "a.nav-link" , function() {
+				$(".tab-pane").removeClass("active show");
+				var href = $(this).attr("href");
+				$(href).addClass("active show");
+			});
 		});
 
 	</script>
