@@ -214,4 +214,8 @@
 
 }
 
+#tab-title a{
+	direction: rtl;
+}
+
 /*end master css*/
