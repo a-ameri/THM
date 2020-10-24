@@ -71,7 +71,7 @@
 				</div>
 				<div class="row">
 					<div class="col-11"></div>
-					<div class="col-1"><button class="btn btn-secondary">بازگشت</button></div>
+					<div id="back" class="col-1"><button class="btn btn-secondary">بازگشت</button></div>
 				</div>
 		  	</div>
 
@@ -79,12 +79,12 @@
 
 		<!--end insert strequest softwate-->
 
-	  <script>
-
-				$(document).ready(function(){
-					
+	 	<script>				
+			$(document).ready(function(){
+				$("#back").click(function(){
+					window.history.back();
 				});
-
+			});
 		</script>
 
 	</div>
