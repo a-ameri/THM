@@ -126,40 +126,30 @@
 
 								<ul id="ul3-2" class="list-group thm-0radius p-0 collapse">
 
-									  <li href="employee" class="list-group-item list-group-item-action">
+									  <li id="employee" href="employee.html" class="list-group-item list-group-item-action">
 
 										<span class="fas fa-user-plus fa-size">&nbsp;&nbsp;</span><span>مدیریت کاربران</span>
 
 									</li>
-									<li href="#" class="list-group-item list-group-item-action">
+									<li id="" href="#" class="list-group-item list-group-item-action">
 
 										<span class="fa fa-globe fa-size">&nbsp;&nbsp;</span><span>مدیریت ادارات کل</span>
 
 									</li>
-									  <li href="#" class="list-group-item list-group-item-action">
+									  <li id="office" href="office.html" class="list-group-item list-group-item-action">
 
 										<span class="fas fa-building fa-size">&nbsp;&nbsp;</span><span>مدیریت ادارات</span>
 
 									</li>
-									<li href="#" class="list-group-item list-group-item-action">
+									<li id="zone" href="zone.html" class="list-group-item list-group-item-action">
 
 										<span class="fas fa-university fa-size">&nbsp;&nbsp;</span><span>مدیریت حوزه ها</span>
-
-									</li>
-									<li href="#" class="list-group-item list-group-item-action">
-
-										<span class="fab fa-connectdevelop fa-size">&nbsp;&nbsp;</span><span>انتساب کاربران به حوزه</span>
-
-									</li>
-									<li href="#" class="list-group-item list-group-item-action">
-
-										<span class="fas fa-list-ol fa-size">&nbsp;&nbsp;</span><span>لیست تجهیزات کاربران</span>
 
 									</li>
 
 								</ul>
 								  
-								<li data-toggle="collapse" data-target="#ul3-3" href="#" class="list-group-item list-group-item-action">
+								<li id="manage-hardware" data-toggle="collapse" data-target="#ul3-3" href="manage-hardware.html" class="list-group-item list-group-item-action">
 
 									<span class="fas fa-keyboard fa-size">&nbsp;&nbsp;</span><span>کالا</span>
 
@@ -171,26 +161,21 @@
 								</li>
 								<ul id="ul3-4" class="list-group thm-0radius p-0 collapse">
 
-									<li href="#" class="list-group-item list-group-item-action">
+									<li id="storage" href="storage.html" class="list-group-item list-group-item-action">
 
 										<span class="fas fa-plus-square fa-size">&nbsp;&nbsp;</span><span>تعریف انبار</span>
 
 									</li>
-									<li href="#" class="list-group-item list-group-item-action">
+									<li id="stuff-list" href="stuff-list.html" class="list-group-item list-group-item-action">
 
-										<span class="fas fa-user-circle fa-size">&nbsp;&nbsp;</span><span>تعریف انباردار</span>
-
-								  	</li>
-									<li href="#" class="list-group-item list-group-item-action">
-
-										<span class="fas fa-cart-plus fa-size">&nbsp;&nbsp;</span><span>ثبت کالا</span>
+										<span class="fas fa-cart-plus fa-size">&nbsp;&nbsp;</span><span>مدیریت تجهیزات</span>
 
 									</li>
-									<li href="#" class="list-group-item list-group-item-action">
+									<li id="employee-alternative" href="employee-alternative.html" class="list-group-item list-group-item-action">
 
 										<span class="fas fa-universal-access fa-size">&nbsp;&nbsp;</span><span>ثبت جانشین</span>
   
-									  </li>
+									</li>
 
 							  	</ul>
 
@@ -306,20 +291,6 @@
 
 					<ul id="tab-title" class="nav nav-tabs thm-sans-bold border-0" >
 
-						<li class="nav-item thm-bg-tab" dir="ltr">
-
-							<a data-toggle="tab" href="#home" class="nav-link active">
-
-								<span class="fas fa-plus-square fa-size">
-								&nbsp;&nbsp;</span>
-								<span>تعریف انبار</span>
-								&nbsp;&nbsp;
-								<span class="fa fa-times thm-close-tab"></span>
-
-							</a>
-
-						</li>
-
 						<li id="addtab">
 
 							<span class="fas fa-plus-square fa-2x mr-2 mt-2"></span>
@@ -333,12 +304,6 @@
 					<!--begin tab content-->
 
 					<div id="tab-content" class="thm-tabs tab-content thm-bg-tab thm-sans-regular">
-
-						<div id="home" class="tab-pane fade in active show">
-
-						  <iframe src="request-repair-edit.html" title="accounts" class="thm-iframe"></iframe>
-
-						</div>
 
 					</div>
 
@@ -432,8 +397,8 @@
 				return;
 				var hyper_ref = $(this).attr("href");
 				var id = $(this).attr("id");
-				var menu_title = '<li class="nav-item thm-bg-tab" dir="ltr"><a data-toggle="tab" href="#'+id+'" class="nav-link active">'+$(this).html()+'&nbsp;&nbsp;<span class="fa fa-times thm-close-tab"></span></a></li>';
-				var content = '<div id="'+id+'" class="tab-pane fade in active show"><iframe src="'+hyper_ref+'" title="accounts" class="thm-iframe"></iframe></div>';
+				var menu_title = '<li class="nav-item thm-bg-tab" dir="ltr"><a data-toggle="tab" data-thm-href="div_'+id+'" class="nav-link active">'+$(this).html()+'&nbsp;&nbsp;<span class="fa fa-times thm-close-tab"></span></a></li>';
+				var content = '<div id="div_'+id+'" class="tab-pane fade in active show"><iframe src="'+hyper_ref+'" title="accounts" class="thm-iframe"></iframe></div>';
 				$(".tab-pane").removeClass("active show");
 				$("#addtab").before(menu_title);
 				$("#tab-content").append(content);
@@ -442,14 +407,14 @@
 
 			$(document).on("click", "span.thm-close-tab" , function() {
 				$(this).parent().parent().remove();
-				var id = $(this).parent().attr('href');
-				$(id).remove();
+				var id = $(this).parent().attr('data-thm-href');
+				$("#"+id).remove();
 			});
 
 			$(document).on("click", "a.nav-link" , function() {
 				$(".tab-pane").removeClass("active show");
-				var href = $(this).attr("href");
-				$(href).addClass("active show");
+				var href = $(this).attr("data-thm-href");
+				$("#"+href).addClass("active show");
 			});
 		});
 
