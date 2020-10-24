@@ -12,7 +12,8 @@
 }
 .nav-link:hover{
 	color: #557463;
-	background-color: #ebf7f4;		
+	background-color: #ebf7f4;
+	cursor: pointer;
 	
 }
 .nav-tabs .nav-link{
@@ -21,4 +22,8 @@
 
 .nav li{
 	margin-left: 3px;
+}
+
+li .list-group-item-action{
+	cursor: pointer;
 }

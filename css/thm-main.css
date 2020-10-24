@@ -3,6 +3,12 @@
 /* CSS Document */
 
 /*begin master css*/
+
+
+li.list-group-item-action{
+	cursor: pointer;
+}
+
 .thm-header-badge{
 	height: 30px;
 }
